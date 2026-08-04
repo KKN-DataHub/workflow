@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ระเบียบ กค. ว่าด้วยการจัดซื้อจัดจ้างฯ (ฉบับที่ 3) พ.ศ. 2569 — การประเมินผลการปฏิบัติงานของผู้ประกอบการ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#101E2C; --ink2:#3A4B5C; --muted:#6B7C8C; --line:#E1E6EB; --bg:#F4F6F8; --card:#fff;
+  --slate:#16283C; --slate2:#22415F; --steel:#0F6B72;
+  --s1:#2E7D6B;  --s1bg:#E7F3EF;
+  --s5:#3E8C6E;  --s5bg:#E9F4EF;
+  --s10:#B0821C; --s10bg:#FBF1DC;
+  --s20:#C06A22; --s20bg:#FCEEE0;
+  --s30:#B3502A; --s30bg:#FBE9E1;
+  --s60:#A32E24; --s60bg:#FAE7E4;
+  --blue:#1E4E75; --bluebg:#E9F0F6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'IBM Plex Sans Thai',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px 80px}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#0C1B29 0%,#16283C 48%,#123F4A 100%);color:#fff;padding:62px 24px 74px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-140px;top:-140px;width:480px;height:480px;border-radius:50%;background:rgba(255,255,255,.045)}
+.hero::before{content:"";position:absolute;right:90px;bottom:-200px;width:340px;height:340px;border-radius:50%;border:1px solid rgba(255,255,255,.11)}
+.hero-in{max-width:1140px;margin:0 auto;position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:500;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:7px 16px;border-radius:99px;margin-bottom:20px}
+.dot{width:7px;height:7px;border-radius:50%;background:#E8A33D;display:inline-block}
+h1{font-size:41px;line-height:1.28;font-weight:600;letter-spacing:-.01em;max-width:930px}
+h1 .thin{font-weight:300;opacity:.9}
+.hero-sub{margin-top:16px;font-size:18px;font-weight:300;opacity:.86;max-width:820px}
+.tagline{display:inline-block;margin-top:22px;background:#C8873A;color:#241703;font-weight:600;font-size:14.5px;padding:9px 20px;border-radius:9px}
+.hero-meta{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+.chip{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.17);border-radius:10px;padding:10px 18px;font-size:14px;font-weight:300}
+.chip b{display:block;font-size:16.5px;font-weight:600}
+
+/* STRIP */
+.strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border-radius:16px;overflow:hidden;margin-top:-36px;position:relative;z-index:5;box-shadow:0 18px 44px rgba(16,30,44,.16)}
+.strip .cell{background:#fff;padding:24px 16px;text-align:center}
+.strip .num{font-size:31px;font-weight:600;color:var(--slate);line-height:1.1}
+.strip .num small{font-size:15px;font-weight:400;color:var(--muted)}
+.strip .lbl{font-size:12.5px;color:var(--muted);margin-top:7px;font-weight:400;line-height:1.45}
+
+section{margin-top:62px}
+.sec-head{display:flex;align-items:flex-start;gap:16px;margin-bottom:24px}
+.sec-no{flex:none;width:38px;height:38px;border-radius:11px;background:var(--slate);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:16px}
+.sec-head h2{font-size:25px;font-weight:600;line-height:1.35}
+.sec-head p{font-size:14.5px;color:var(--muted);font-weight:300;margin-top:2px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.g-2-1{display:grid;grid-template-columns:1.35fr .9fr;gap:18px}
+
+/* WHY */
+.goal{display:flex;gap:14px;align-items:flex-start;padding:13px 0}
+.goal + .goal{border-top:1px dashed var(--line)}
+.goal .n{flex:none;width:26px;height:26px;border-radius:8px;background:var(--bluebg);color:var(--blue);font-size:12.5px;font-weight:600;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.goal p{font-size:14.5px;color:var(--ink2);font-weight:300;line-height:1.6}
+.goal p b{color:var(--ink);font-weight:600}
+.law{background:linear-gradient(160deg,#16283C,#124049);color:#fff;border:none}
+.law .ttl{font-size:12.5px;letter-spacing:.07em;opacity:.65;margin-bottom:14px}
+.law .item{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.13);font-size:15px;font-weight:300}
+.law .item:last-child{border:none}
+.law .item b{font-weight:600}
+
+/* SCOPE */
+.scope-lead{background:linear-gradient(150deg,#123F4A,#0F6B72);color:#fff;border-radius:16px;padding:28px;margin-bottom:18px}
+.scope-lead .k{font-size:12.5px;letter-spacing:.07em;opacity:.7;margin-bottom:8px}
+.scope-lead h3{font-size:22px;font-weight:600;margin-bottom:8px}
+.scope-lead p{font-size:15px;font-weight:300;opacity:.9}
+.orgs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px}
+.org{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:13px 14px;font-size:14px;font-weight:400}
+.org.hi{background:#E8A33D;border-color:#E8A33D;color:#241703;font-weight:700}
+.org .tag{display:block;font-size:11px;font-weight:600;opacity:.75;margin-bottom:2px}
+.scope2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.scope2 .box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+.scope2 .box .k{font-size:12px;font-weight:600;color:var(--steel);letter-spacing:.05em;margin-bottom:9px}
+.scope2 .box h4{font-size:17px;font-weight:600;margin-bottom:6px}
+.scope2 .box p{font-size:14px;color:var(--ink2);font-weight:300}
+
+/* STRUCTURE */
+.parts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.part{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;position:relative}
+.part .pn{font-size:11.5px;font-weight:600;color:var(--steel);background:#E4F1F2;display:inline-block;padding:3px 10px;border-radius:7px;margin-bottom:11px}
+.part h4{font-size:16px;font-weight:600;margin-bottom:6px;line-height:1.35}
+.part .arts{font-size:12.5px;color:var(--muted);font-weight:400}
+.part p{font-size:13.5px;color:var(--ink2);font-weight:300;margin-top:8px;line-height:1.55}
+
+/* DEFS */
+.def{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.def .term{font-size:16.5px;font-weight:600;color:var(--slate);margin-bottom:7px}
+.def p{font-size:14px;color:var(--ink2);font-weight:300;line-height:1.62}
+.def p b{color:var(--ink);font-weight:600}
+.harm{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;margin-top:12px}
+.harm div{font-size:13.5px;color:var(--ink2);font-weight:300;padding-left:22px;position:relative}
+.harm div span{position:absolute;left:0;top:0;font-size:11.5px;font-weight:600;color:var(--s60)}
+
+/* SCORE TABLES */
+.tbl-wrap{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+table{width:100%;border-collapse:collapse;font-size:14px}
+thead th{background:#16283C;color:#fff;font-weight:500;padding:13px 12px;text-align:left;font-size:13px;border-right:1px solid rgba(255,255,255,.1)}
+thead th:last-child{border-right:none;text-align:center}
+tbody td{padding:12px;border-bottom:1px solid var(--line);color:var(--ink2);font-weight:300;vertical-align:top;font-size:14px;line-height:1.55}
+tbody tr:last-child td{border-bottom:none}
+td.code{width:62px;font-weight:600;color:var(--slate);white-space:nowrap}
+td.sub{padding-left:34px}
+td.sub2{padding-left:58px}
+td.pt{width:96px;text-align:center;vertical-align:middle}
+.phase-row td{background:#F0F3F6;font-weight:600;color:var(--slate);font-size:14.5px;padding:11px 12px}
+.badge{display:inline-block;min-width:44px;padding:5px 11px;border-radius:8px;font-weight:700;font-size:15px;text-align:center}
+.b1{background:var(--s1bg);color:var(--s1)}
+.b5{background:var(--s5bg);color:var(--s5)}
+.b10{background:var(--s10bg);color:var(--s10)}
+.b20{background:var(--s20bg);color:var(--s20)}
+.b30{background:var(--s30bg);color:var(--s30)}
+.b60{background:var(--s60bg);color:var(--s60)}
+.note-row td{background:#FCFDFE;font-size:13px;color:var(--muted)}
+
+/* SUSPENSION */
+.susp{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+.sc{background:#fff;border:1px solid var(--line);border-radius:13px;padding:16px 12px;text-align:center;position:relative;overflow:hidden}
+.sc .bar{height:5px;border-radius:99px;margin:0 auto 13px;width:100%}
+.sc .rng{font-size:14.5px;font-weight:600;color:var(--slate)}
+.sc .rl{font-size:11px;color:var(--muted);margin:3px 0 9px}
+.sc .day{font-size:21px;font-weight:700;line-height:1.15}
+.sc .dl{font-size:11.5px;color:var(--muted);margin-top:2px}
+
+/* WHO EVALUATES */
+.path{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;height:100%}
+.path .who{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:8px;margin-bottom:14px}
+.path h4{font-size:17px;font-weight:600;margin-bottom:10px;line-height:1.35}
+.path .cases{font-size:13.5px;color:var(--ink2);font-weight:300;line-height:1.6}
+.path .cases b{color:var(--ink);font-weight:600}
+.steps{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)}
+.steps ol{list-style:none;counter-reset:s}
+.steps li{counter-increment:s;font-size:13px;color:var(--ink2);font-weight:300;padding-left:26px;position:relative;margin-bottom:8px;line-height:1.5}
+.steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:18px;height:18px;border-radius:6px;background:#EEF2F5;color:var(--slate);font-size:11px;font-weight:600;display:flex;align-items:center;justify-content:center}
+
+/* COMMITTEE */
+.comm{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cm{background:#fff;border:1px solid var(--line);border-radius:14px;padding:19px}
+.cm .k{font-size:11.5px;font-weight:600;letter-spacing:.05em;color:var(--muted);margin-bottom:8px}
+.cm .v{font-size:19px;font-weight:600;color:var(--slate);margin-bottom:5px;line-height:1.3}
+.cm p{font-size:13px;color:var(--ink2);font-weight:300;line-height:1.5}
+
+/* APPEAL TIMELINE */
+.tl{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 26px}
+.tl svg{width:100%;height:auto;display:block}
+
+/* RESET */
+.reset{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rs{border-radius:16px;padding:24px;border:1px solid}
+.rs.a{background:var(--bluebg);border-color:#C8DAE8}
+.rs.b{background:var(--s1bg);border-color:#BFDFD4}
+.rs.c{background:#FBF1DC;border-color:#EBD9B0}
+.rs .k{font-size:12px;font-weight:600;letter-spacing:.05em;margin-bottom:9px;opacity:.8}
+.rs h4{font-size:18px;font-weight:600;margin-bottom:8px}
+.rs p{font-size:14px;font-weight:300;color:var(--ink2);line-height:1.6}
+
+/* TRANSITION */
+.warn{background:linear-gradient(150deg,#8A2C22,#A63A2C);color:#fff;border-radius:16px;padding:30px}
+.warn .hd{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.warn h3{font-size:21px;font-weight:600}
+.warn > p{font-size:15px;opacity:.88;font-weight:300;margin-bottom:20px}
+.warn .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.warn .side{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.18);border-radius:13px;padding:18px}
+.warn .side .t{font-size:12px;font-weight:600;opacity:.8;margin-bottom:7px}
+.warn .side h5{font-size:16px;font-weight:600;margin-bottom:7px}
+.warn .side p{font-size:13.5px;font-weight:300;opacity:.9;line-height:1.55}
+.warn .side ul{list-style:none;margin-top:9px}
+.warn .side li{font-size:13px;font-weight:300;padding-left:16px;position:relative;margin-bottom:4px;opacity:.92}
+.warn .side li::before{content:"";position:absolute;left:2px;top:9px;width:5px;height:5px;border-radius:50%;background:#F3C6BE}
+
+/* CHECKLIST */
+.chk{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+.chk .row{display:flex;gap:15px;padding:15px 0}
+.chk .row + .row{border-top:1px solid var(--line)}
+.chk .box{flex:none;width:26px;height:26px;border-radius:8px;border:2px solid var(--steel);display:flex;align-items:center;justify-content:center;margin-top:2px}
+.chk h5{font-size:15.5px;font-weight:600;margin-bottom:3px}
+.chk p{font-size:14px;color:var(--ink2);font-weight:300;line-height:1.6}
+
+footer{margin-top:68px;padding:26px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted);font-weight:300;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+@media (max-width:900px){
+  h1{font-size:29px}
+  .strip{grid-template-columns:1fr 1fr}
+  .grid-2,.grid-3,.g-2-1,.scope2,.reset,.warn .row{grid-template-columns:1fr}
+  .parts,.comm,.orgs{grid-template-columns:1fr 1fr}
+  .susp{grid-template-columns:1fr 1fr}
+  .tbl-wrap{overflow-x:auto} table{min-width:680px}
+}
+@media print{
+  body{background:#fff} section{break-inside:avoid}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-in">
+    <div class="eyebrow"><span class="dot"></span> ราชกิจจานุเบกษา · เล่ม ๑๔๓ ตอนพิเศษ ๑๖๙ ง · ๙ กรกฎาคม ๒๕๖๙</div>
+    <h1>ระเบียบกระทรวงการคลัง ว่าด้วยการจัดซื้อจัดจ้างและการบริหารพัสดุภาครัฐ <span class="thin">(ฉบับที่ ๓) พ.ศ. ๒๕๖๙</span></h1>
+    <p class="hero-sub">ยกเครื่อง <b>หมวด ๗ การประเมินผลการปฏิบัติงานของผู้ประกอบการ</b> — เปลี่ยนจากการประเมินเชิงคุณภาพ มาเป็น <b>ระบบให้คะแนนความเสียหาย</b> ที่สะสมข้ามสัญญา และนำไปสู่การ<b>ระงับสิทธิยื่นข้อเสนอ</b></p>
+    <div class="tagline">กรมทางหลวงชนบท ถูกระบุชื่อไว้ในระเบียบโดยตรง — สัญญาก่อสร้างตั้งแต่ ๕ ล้านบาทขึ้นไป</div>
+    <div class="hero-meta">
+      <div class="chip">ประกาศ ณ วันที่<b>๘ กรกฎาคม ๒๕๖๙</b></div>
+      <div class="chip">มีผลบังคับใช้<b>๑๐ กรกฎาคม ๒๕๖๙</b></div>
+      <div class="chip">ผู้ลงนาม<b>รมว. กระทรวงการคลัง</b></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="strip">
+    <div class="cell"><div class="num">5<small> ล้านบาท</small></div><div class="lbl">วงเงินสัญญาที่เข้าเกณฑ์<br>สำหรับ ทช. และอีก 5 กรม</div></div>
+    <div class="cell"><div class="num">6</div><div class="lbl">เงื่อนไขที่ถูกให้คะแนน<br>ความเสียหาย</div></div>
+    <div class="cell"><div class="num">60</div><div class="lbl">คะแนนสูงสุด<br>ต่อหนึ่งเหตุ</div></div>
+    <div class="cell"><div class="num">720<small> วัน</small></div><div class="lbl">ระยะเวลาระงับสิทธิ<br>สูงสุด</div></div>
+    <div class="cell"><div class="num">2<small> ปี</small></div><div class="lbl">คะแนนถูกลบ<br>โดยกรมบัญชีกลาง</div></div>
+  </div>
+
+  <!-- 1 WHY -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-no">1</div>
+      <div><h2>ทำไมต้องออกระเบียบฉบับนี้</h2><p>แก้ไขเพิ่มเติมหลักเกณฑ์และวิธีการประเมินผลการปฏิบัติงานของผู้ประกอบการ</p></div>
+    </div>
+    <div class="g-2-1">
+      <div class="card">
+        <div class="goal"><div class="n">1</div><p><b>ควบคุมมาตรฐานงานก่อสร้าง</b> ให้เป็นไปตามหลักวิชาช่างในงานก่อสร้าง</p></div>
+        <div class="goal"><div class="n">2</div><p><b>กำกับและติดตามการปฏิบัติงาน</b> ให้เป็นไปตามสัญญา</p></div>
+        <div class="goal"><div class="n">3</div><p><b>คัดกรองผู้ประกอบการ</b> ที่เข้ารับงานกับภาครัฐ ให้ได้ผู้ที่มีคุณภาพและศักยภาพ</p></div>
+        <div class="goal"><div class="n">4</div><p><b>เป็นมาตรการลงโทษ</b> ผู้ประกอบการที่ละเลยการปฏิบัติตามสัญญาหรือตามหลักวิชาช่าง หรือประมาทเลินเล่อ จนเป็นเหตุให้เกิดความเสียหายต่อชีวิตหรือทรัพย์สินของประชาชนและหน่วยงานของรัฐ</p></div>
+        <div class="goal"><div class="n">5</div><p>ให้หน่วยงานของรัฐ<b>มีเกณฑ์ปฏิบัติที่เหมาะสม ชัดเจน และเป็นไปในแนวทางเดียวกัน</b></p></div>
+      </div>
+      <div class="card law">
+        <div class="ttl">อาศัยอำนาจตาม</div>
+        <div class="item">มาตรา <b>๕</b></div>
+        <div class="item">มาตรา <b>๑๐๖ วรรคสี่</b></div>
+        <div class="item">มาตรา <b>๑๐๘</b></div>
+        <div class="item">พ.ร.บ. การจัดซื้อจัดจ้างและการบริหารพัสดุภาครัฐ <b>พ.ศ. ๒๕๖๐</b></div>
+        <div class="item" style="opacity:.7;font-size:13.5px">วางระเบียบโดย รัฐมนตรีว่าการกระทรวงการคลัง</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 SCOPE -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-no">2</div>
+      <div><h2>ข้อ ๑๙๐/๒ — ใครต้องทำการประเมินบ้าง</h2><p>ขอบเขตการบังคับใช้ เข้าเกณฑ์ข้อใดข้อหนึ่งก็ต้องประเมิน</p></div>
+    </div>
+
+    <div class="scope-lead">
+      <div class="k">เกณฑ์ที่ ๑ — ตามหน่วยงาน + วงเงิน</div>
+      <h3>งานก่อสร้างมูลค่าสัญญาตั้งแต่ ๕ ล้านบาทขึ้นไป ของ ๖ หน่วยงานที่ระบุชื่อ</h3>
+      <p>รวมถึงหน่วยงานของรัฐอื่นตามที่คณะกรรมการนโยบายประกาศกำหนดในภายหลัง</p>
+      <div class="orgs">
+        <div class="org"><span class="tag">(ก)</span>กรมชลประทาน</div>
+        <div class="org"><span class="tag">(ข)</span>กรมเจ้าท่า</div>
+        <div class="org"><span class="tag">(ค)</span>กรมทางหลวง</div>
+        <div class="org hi"><span class="tag">(ง)</span>กรมทางหลวงชนบท</div>
+        <div class="org"><span class="tag">(จ)</span>กรมทรัพยากรน้ำ</div>
+        <div class="org"><span class="tag">(ฉ)</span>กรมโยธาธิการและผังเมือง</div>
+        <div class="org" style="grid-column:span 2"><span class="tag">(ช)</span>หน่วยงานของรัฐอื่นตามที่คณะกรรมการนโยบายประกาศกำหนด</div>
+      </div>
+    </div>
+
+    <div class="scope2">
+      <div class="box">
+        <div class="k">เกณฑ์ที่ ๒ — ตามประเภทอาคาร (ทุกหน่วยงาน)</div>
+        <h4>อาคารสูง · อาคารขนาดใหญ่พิเศษ · อาคารชุมนุมคน</h4>
+        <p>งานก่อสร้างของหน่วยงานของรัฐ<b>ทุกแห่ง</b> สำหรับงานก่อสร้างประเภทดังกล่าว ตามกฎหมายว่าด้วยการควบคุมอาคาร — ไม่กำหนดวงเงินขั้นต่ำ</p>
+      </div>
+      <div class="box">
+        <div class="k">เกณฑ์ที่ ๓ — ตามวงเงิน (ทุกหน่วยงาน)</div>
+        <h4>มูลค่าสัญญาตั้งแต่ ๑,๐๐๐ ล้านบาทขึ้นไป</h4>
+        <p>งานก่อสร้างของหน่วยงานของรัฐ<b>ทุกแห่ง</b> ที่มีมูลค่าสัญญาถึงเกณฑ์นี้ ไม่ว่าจะเป็นหน่วยงานใด</p>
+      </div>
+    </div>
+
+    <div class="def" style="margin-top:18px">
+      <div class="term">ข้อสังเกตสำหรับ กรมทางหลวงชนบท</div>
+      <p>ทช. เข้าเกณฑ์ที่ ๑ โดยตรง — <b>สัญญาก่อสร้างตั้งแต่ ๕ ล้านบาทขึ้นไปทุกสัญญา ต้องมีการประเมินผลการปฏิบัติงานของผู้ประกอบการในระบบ e-GP</b> และหน่วยงานต้อง<b>กำหนดเงื่อนไขการประเมินไว้ในประกาศและเอกสารเชิญชวน</b>ให้ผู้ยื่นข้อเสนอทราบล่วงหน้าด้วย (ข้อ ๑๙๐/๑ วรรคสอง)</p>
+    </div>
+  </section>
+
+  <!-- 3 STRUCTURE -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-no">3</div>
+      <div><h2>โครงสร้างหมวด ๗ ใหม่</h2><p>ยกเลิกข้อ ๑๙๐ และข้อ ๑๙๑ เดิม แล้วเขียนใหม่เป็น ๔ ส่วน</p></div>
+    </div>
+    <div class="parts">
+      <div class="part">
+        <div class="pn">ส่วนที่ ๑</div>
+        <h4>นิยาม</h4>
+        <div class="arts">ข้อ ๑๙๐</div>
+        <p>ผู้ประกอบการ · แผนการทำงาน · อันตรายสาหัส · ทรัพย์สินเสียหาย · การระงับ · บัญชีเอกสารแนบท้าย</p>
+      </div>
+      <div class="part">
+        <div class="pn">ส่วนที่ ๒</div>
+        <h4>เงื่อนไขและวิธีการประเมิน</h4>
+        <div class="arts">ข้อ ๑๙๐/๑ – ๑๙๐/๕</div>
+        <p>ขอบเขตบังคับใช้ · ๖ เงื่อนไขที่ให้คะแนน · ประเมิน ๒ ช่วง · ใครเป็นผู้ประเมิน</p>
+      </div>
+      <div class="part">
+        <div class="pn">ส่วนที่ ๓</div>
+        <h4>การอุทธรณ์โต้แย้งผลการประเมิน</h4>
+        <div class="arts">ข้อ ๑๙๐/๖</div>
+        <p>สิทธิอุทธรณ์ภายใน ๗ วันทำการ · ขั้นตอนพิจารณา · การรายงานผู้มีอำนาจเหนือขึ้นไป</p>
+      </div>
+      <div class="part">
+        <div class="pn">ส่วนที่ ๔</div>
+        <h4>การนับระยะเวลา การระงับ และการแก้ไขคะแนน</h4>
+        <div class="arts">ข้อ ๑๙๐/๗ – ๑๙๐/๙ และข้อ ๑๙๑</div>
+        <p>คะแนนสะสม · การหักวันที่ถูกระงับ · คำพิพากษาถึงที่สุด · การลบคะแนนเมื่อครบ ๒ ปี</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 DEFINITIONS -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-no">4</div>
+      <div><h2>ข้อ ๑๙๐ — นิยามที่ต้องรู้</h2><p>คำเหล่านี้กำหนดว่าใครถูกประเมิน และเหตุใดนับเป็นความเสียหายระดับไหน</p></div>
+    </div>
+    <div class="grid-2">
+      <div class="def">
+        <div class="term">“ผู้ประกอบการ”</div>
+        <p>ผู้ประกอบการงานก่อสร้างที่เป็น<b>คู่สัญญา</b>กับหน่วยงานของรัฐ และหมายความรวมถึง<b>ผู้รับจ้างช่วงที่ได้รับอนุญาตจากหน่วยงานของรัฐ</b>ด้วย</p>
+      </div>
+      <div class="def">
+        <div class="term">“การระงับ”</div>
+        <p>การระงับ<b>การยื่นข้อเสนอ</b> หรือ<b>ทำสัญญาหรือข้อตกลงเป็นหนังสือ</b></p>
+      </div>
+      <div class="def" style="grid-column:span 2">
+        <div class="term">“แผนการทำงาน”</div>
+        <p>แผนการทำงานที่ผู้รับจ้างเสนอให้แก่ผู้ว่าจ้างตามสัญญา โดยแสดงถึง<b>ขั้นตอนของการทำงาน</b>และ<b>กำหนดระยะเวลาที่ต้องใช้ในการทำงานหลักต่าง ๆ แล้วเสร็จ</b> ถูกต้องชัดเจนตามหลักวิชาการ ปริมาณงานในแต่ละงวดงานต้องสอดคล้องกับจำนวนเงินในแต่ละงวดงาน โดยคำนึงถึงความเป็นธรรมของทั้งผู้รับจ้างและผู้ว่าจ้าง</p>
+      </div>
+      <div class="def" style="grid-column:span 2">
+        <div class="term">“ทรัพย์สินเสียหาย”</div>
+        <p>ความเสียหาย<b>รุนแรง</b>ซึ่งเป็นผลโดยตรงจากการกระทำความผิดนั้น มีผลให้ทรัพย์สินของประชาชนหรือหน่วยงานของรัฐหรือสาธารณะเกิดความเสียหาย <b>และส่งผลกระทบให้ผู้ประกอบการไม่สามารถปฏิบัติงานได้ อันเป็นเหตุให้หน่วยงานของรัฐต้องสั่งหยุดการปฏิบัติงานชั่วคราว</b></p>
+      </div>
+      <div class="def" style="grid-column:span 2">
+        <div class="term">“อันตรายสาหัส” — ๘ กรณี</div>
+        <div class="harm">
+          <div><span>(๑)</span>ตาบอด หูหนวก ลิ้นขาด หรือเสียฆานประสาท</div>
+          <div><span>(๒)</span>เสียอวัยวะสืบพันธุ์ หรือความสามารถสืบพันธุ์</div>
+          <div><span>(๓)</span>เสียแขน ขา มือ เท้า นิ้ว หรืออวัยวะอื่นใด</div>
+          <div><span>(๔)</span>หน้าเสียโฉมอย่างติดตัว</div>
+          <div><span>(๕)</span>แท้งลูก</div>
+          <div><span>(๖)</span>จิตพิการอย่างติดตัว</div>
+          <div><span>(๗)</span>ทุพพลภาพ หรือป่วยเจ็บเรื้อรังซึ่งอาจถึงตลอดชีวิต</div>
+          <div><span>(๘)</span>ทุพพลภาพ หรือป่วยเจ็บด้วยอาการทุกขเวทนาเกินกว่ายี่สิบวัน หรือจนประกอบกรณียกิจตามปกติไม่ได้เกินกว่ายี่สิบวัน</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 SCORE TABLE -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-no">5</div>
+      <div><h2>บัญชีแนบท้าย ๑ — คะแนนความเสียหาย (ตามข้อ ๑๙๐/๓)</h2><p>ประเมิน ๒ ช่วง คือ ระหว่างปฏิบัติงานตามสัญญา และระหว่างรับประกันความชำรุดบกพร่อง</p></div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th style="width:70px">ที่</th><th>ความเสียหาย</th><th style="width:110px">คะแนน</th></tr>
+        </thead>
+        <tbody>
+          <tr class="phase-row"><td colspan="3">๑. ช่วงการปฏิบัติงานตามสัญญา</td></tr>
+          <tr>
+            <td class="code">(๑)</td>
+            <td>ผู้ประกอบการปฏิบัติงานล่วงเลยระยะเวลาครบกำหนดตามสัญญาหรือข้อตกลงเป็นหนังสือ <b>และมีค่าปรับเกินร้อยละ ๑๐ ของวงเงินค่าจ้าง</b></td>
+            <td class="pt"><span class="badge b30">๓๐</span></td>
+          </tr>
+          <tr>
+            <td class="code">(๒)</td>
+            <td>ผู้ประกอบการ<b>ถูกบอกเลิกสัญญา</b>หรือข้อตกลงเป็นหนังสือตามมาตรา ๑๐๓ วรรคหนึ่ง (๒)</td>
+            <td class="pt"><span class="badge b60">๖๐</span></td>
+          </tr>
+          <tr>
+            <td class="code">(๓)</td>
+            <td colspan="2">ผู้ประกอบการปฏิบัติงาน<b>ไม่เป็นไปตามมาตรฐานของหลักวิชาช่างในงานก่อสร้าง หรือประมาทเลินเล่ออย่างร้ายแรง</b> อันมีผลกระทบ ดังนี้</td>
+          </tr>
+          <tr>
+            <td class="code"></td>
+            <td class="sub">(ก) เหตุที่เกิดขึ้นมีผลกระทบทำให้<b>มีบุคคลถึงแก่ความตาย</b></td>
+            <td class="pt"><span class="badge b60">๖๐</span></td>
+          </tr>
+          <tr>
+            <td class="code"></td>
+            <td class="sub">(ข) เหตุที่เกิดขึ้นมีผลกระทบทำให้<b>มีบุคคลได้รับอันตรายสาหัส</b></td>
+            <td class="pt"><span class="badge b30">๓๐</span></td>
+          </tr>
+          <tr>
+            <td class="code"></td>
+            <td class="sub">(ค) ทรัพย์สินเสียหาย + หน่วยงานสั่งหยุดปฏิบัติงานชั่วคราว + กระทบต่อการปฏิบัติงานตามแผนงาน (ไม่ว่าทั้งหมดหรือบางส่วน) <b>และส่งผลกระทบต่อการจราจร หรือเกิดความเสียหายแก่ประโยชน์สาธารณะ</b></td>
+            <td class="pt"><span class="badge b10">๑๐</span></td>
+          </tr>
+          <tr>
+            <td class="code"></td>
+            <td class="sub">(ง) เช่นเดียวกับ (ค) <b>แต่ไม่ส่งผลกระทบต่อการจราจรหรือประโยชน์สาธารณะ</b></td>
+            <td class="pt"><span class="badge b5">๕</span></td>
+          </tr>
+          <tr>
+            <td class="code"></td>
+            <td class="sub">(จ) ปฏิบัติงานไม่เป็นไปตามมาตรฐานของหลักวิชาช่างในงานก่อสร้าง <b>หรือไม่ปฏิบัติตามมาตรฐานความปลอดภัยตามสัญญา</b></td>
+            <td class="pt"></td>
+          </tr>
+          <tr>
+            <td class="code"></td>
+            <td class="sub2">๑) ไม่ดำเนินการแก้ไขและปฏิบัติให้ถูกต้องตามสัญญา ภายในระยะเวลาที่หน่วยงานของรัฐกำหนดตามหนังสือแจ้งให้แก้ไข</td>
+            <td class="pt"><span class="badge b10">๑๐</span></td>
+          </tr>
+          <tr>
+            <td class="code"></td>
+            <td class="sub2">๒) ไม่ดำเนินการแก้ไขและปฏิบัติให้ถูกต้องตามสัญญา <b>ภายใน ๓๐ วัน</b> นับถัดจากวันที่พ้นระยะเวลาตาม ๑)</td>
+            <td class="pt"><span class="badge b10">๑๐</span></td>
+          </tr>
+          <tr>
+            <td class="code"></td>
+            <td class="sub2">เมื่อพ้นระยะเวลาตาม ๒) ยังไม่ดำเนินการแก้ไข → หน่วยงานของรัฐมีหนังสือแจ้งคะแนนความเสียหาย <b>ทุก ๓๐ วัน</b></td>
+            <td class="pt"><span class="badge b20">๒๐</span></td>
+          </tr>
+
+          <tr class="phase-row"><td colspan="3">๒. ช่วงการรับประกันความชำรุดบกพร่อง</td></tr>
+          <tr>
+            <td class="code">(๔)</td>
+            <td colspan="2">ไม่เข้ามาแก้ไขภายในระยะเวลารับประกัน หรือเข้าแก้ไขแต่ล่าช้า/ไม่แล้วเสร็จ โดยความชำรุดบกพร่อง<b>กระทบต่อโครงสร้างหลัก</b> อันเกิดจากใช้วัสดุไม่ถูกต้อง ทำไว้ไม่เรียบร้อย หรือทำไม่ถูกต้องตามมาตรฐานแห่งหลักวิชาช่าง</td>
+          </tr>
+          <tr><td class="code"></td><td class="sub">(ก) ไม่เข้าดำเนินการแก้ไขตามระยะเวลาที่กำหนดไว้ในสัญญา</td><td class="pt"><span class="badge b1">๑</span></td></tr>
+          <tr><td class="code"></td><td class="sub">(ข) ไม่เข้าดำเนินการแก้ไขให้ถูกต้องตามสัญญา <b>ภายใน ๓๐ วัน</b> นับถัดจากวันที่พ้นระยะเวลาตาม (ก)</td><td class="pt"><span class="badge b5">๕</span></td></tr>
+          <tr><td class="code"></td><td class="sub2">เมื่อพ้นระยะเวลาตาม (ข) ยังไม่แก้ไข → หน่วยงานของรัฐมีหนังสือแจ้งคะแนนความเสียหาย <b>ทุก ๓๐ วัน</b></td><td class="pt"><span class="badge b5">๕</span></td></tr>
+          <tr><td class="code"></td><td class="sub">(ค) เข้าดำเนินการแก้ไขแล้ว <b>แต่ดำเนินการไม่แล้วเสร็จ</b>ตามที่หน่วยงานของรัฐกำหนด</td><td class="pt"><span class="badge b5">๕</span></td></tr>
+          <tr><td class="code"></td><td class="sub">(ง) ไม่เข้ามาแก้ไข หรือเข้าแก้ไขแต่ล่าช้า/ไม่แล้วเสร็จ <b>อันเป็นเหตุให้หน่วยงานของรัฐต้องดำเนินการแก้ไขเอง หรือจ้างผู้ประกอบการอื่นมาแก้ไข</b></td><td class="pt"><span class="badge b60">๖๐</span></td></tr>
+          <tr>
+            <td class="code">(๕)</td>
+            <td colspan="2">กรณีเดียวกับ (๔) แต่ความชำรุดบกพร่อง<b>ไม่กระทบต่อโครงสร้างหลัก</b></td>
+          </tr>
+          <tr><td class="code"></td><td class="sub">(ก) เข้าดำเนินการแก้ไขแล้ว แต่ดำเนินการไม่แล้วเสร็จตามที่หน่วยงานของรัฐกำหนด</td><td class="pt"><span class="badge b5">๕</span></td></tr>
+          <tr><td class="code"></td><td class="sub">(ข) ไม่เข้ามาแก้ไข หรือเข้าแก้ไขแต่ล่าช้า/ไม่แล้วเสร็จ อันเป็นเหตุให้หน่วยงานของรัฐต้องแก้ไขเอง หรือจ้างผู้ประกอบการอื่น</td><td class="pt"><span class="badge b60">๖๐</span></td></tr>
+          <tr class="note-row"><td class="code">(๖)</td><td colspan="2">กรณีอื่นตามที่คณะกรรมการนโยบายประกาศกำหนด</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="def" style="margin-top:16px">
+      <div class="term">จุดที่ต้องระวัง</div>
+      <p>ทั้ง (๔)(ง) และ (๕)(ข) ให้ <b>๖๐ คะแนนเท่ากับการถูกบอกเลิกสัญญา</b> — นั่นคือ ถ้าหน่วยงานต้องเข้าไปซ่อมเองหรือจ้างคนอื่นมาซ่อมในช่วงรับประกัน ผู้รับจ้างจะโดนหนักที่สุด ไม่ว่าจะกระทบโครงสร้างหลักหรือไม่ก็ตาม</p>
+    </div>
+  </section>
+
+  <!-- 6 SUSPENSION -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-no">6</div>
+      <div><h2>บัญชีแนบท้าย ๒ — คะแนนสะสม แปลงเป็นระยะเวลาระงับสิทธิ</h2><p>ระงับการยื่นข้อเสนอ หรือทำสัญญา/ข้อตกลงเป็นหนังสือ</p></div>
+    </div>
+    <div class="susp">
+      <div class="sc"><div class="bar" style="background:#CBD4DC"></div><div class="rng">๑ – ๙</div><div class="rl">คะแนนสะสม</div><div class="day" style="color:#9AA6B2">–</div><div class="dl">ยังไม่ถูกระงับ</div></div>
+      <div class="sc"><div class="bar" style="background:#4E9B84"></div><div class="rng">๑๐ – ๒๙</div><div class="rl">คะแนนสะสม</div><div class="day" style="color:#2E7D6B">๓๐</div><div class="dl">วัน</div></div>
+      <div class="sc"><div class="bar" style="background:#7FA84A"></div><div class="rng">๓๐ – ๕๙</div><div class="rl">คะแนนสะสม</div><div class="day" style="color:#6E8F35">๙๐</div><div class="dl">วัน</div></div>
+      <div class="sc"><div class="bar" style="background:#C79A2A"></div><div class="rng">๖๐ – ๑๑๙</div><div class="rl">คะแนนสะสม</div><div class="day" style="color:#B0821C">๑๘๐</div><div class="dl">วัน</div></div>
+      <div class="sc"><div class="bar" style="background:#CE7B2C"></div><div class="rng">๑๒๐ – ๑๗๙</div><div class="rl">คะแนนสะสม</div><div class="day" style="color:#C06A22">๓๖๐</div><div class="dl">วัน</div></div>
+      <div class="sc"><div class="bar" style="background:#BE5A32"></div><div class="rng">๑๘๐ – ๒๓๙</div><div class="rl">คะแนนสะสม</div><div class="day" style="color:#B3502A">๕๔๐</div><div class="dl">วัน</div></div>
+      <div class="sc"><div class="bar" style="background:#A32E24"></div><div class="rng">≥ ๒๔๐</div><div class="rl">คะแนนสะสม</div><div class="day" style="color:#A32E24">๗๒๐</div><div class="dl">วัน</div></div>
+    </div>
+    <div class="grid-2" style="margin-top:18px">
+      <div class="def">
+        <div class="term">ข้อ ๑๙๐/๗ — ตรวจก่อนจัดจ้างทุกครั้ง</div>
+        <p>ให้หน่วยงานของรัฐที่จะดำเนินการจัดจ้างก่อสร้าง <b>พิจารณาคะแนนความเสียหายสะสมของผู้ประกอบการที่เข้ายื่นข้อเสนอแต่ละราย</b> หากอยู่ในเกณฑ์การถูกระงับ ผู้ประกอบการรายนั้นจะถูกระงับตามเงื่อนไขในบัญชีแนบท้าย นับถัดจากวันที่คะแนนสะสมเข้าเกณฑ์</p>
+      </div>
+      <div class="def">
+        <div class="term">การหักวันเมื่อคะแนนเพิ่ม</div>
+        <p>กรณีมีคะแนนความเสียหายสะสมเพิ่มขึ้น ให้นำ<b>จำนวนวันของระยะเวลาที่ถูกระงับไปแล้ว แต่ไม่เกิน ๒ ปี</b> มาหักออกจากจำนวนวันที่จะถูกระงับในครั้งนี้</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 WHO EVALUATES -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-no">7</div>
+      <div><h2>ข้อ ๑๙๐/๕ — ใครเป็นผู้ประเมิน แยกตามเงื่อนไข</h2><p>เรื่องเดียวกันแต่คนละเหตุ ผู้ประเมินไม่เหมือนกัน</p></div>
+    </div>
+    <div class="grid-3">
+      <div class="path">
+        <div class="who" style="background:var(--bluebg);color:var(--blue)">หัวหน้าเจ้าหน้าที่</div>
+        <h4>เส้นทางที่ ๑</h4>
+        <div class="cases">ใช้กับเงื่อนไข <b>(๒) ถูกบอกเลิกสัญญา</b> · <b>(๔)</b> และ <b>(๕)</b> ช่วงรับประกันความชำรุดบกพร่อง</div>
+        <div class="steps">
+          <ol>
+            <li>หัวหน้าเจ้าหน้าที่ประเมิน และจัดทำแบบแจ้งการประเมินผลฯ พร้อมคะแนนความเสียหาย</li>
+            <li>เสนอหัวหน้าหน่วยงานของรัฐเพื่อขอความเห็นชอบ</li>
+            <li>แจ้งผู้ประกอบการผ่านระบบ e-GP <b>ภายในวันทำการถัดไป</b>นับแต่วันที่เห็นชอบ</li>
+          </ol>
+        </div>
+      </div>
+      <div class="path">
+        <div class="who" style="background:#E4F1F2;color:var(--steel)">คณะกรรมการตรวจรับพัสดุ</div>
+        <h4>เส้นทางที่ ๒</h4>
+        <div class="cases">ใช้กับเงื่อนไข <b>(๑) ค่าปรับเกินร้อยละ ๑๐</b> และ <b>(๓)(จ)</b> ไม่แก้ไขงานตามมาตรฐาน/ความปลอดภัย</div>
+        <div class="steps">
+          <ol>
+            <li>คณะกรรมการตรวจรับพัสดุประเมิน โดย<b>พิจารณาจากรายงานของผู้ควบคุมงาน</b></li>
+            <li>หัวหน้าเจ้าหน้าที่จัดทำแบบแจ้งฯ เสนอหัวหน้าหน่วยงานของรัฐเพื่อขอความเห็นชอบ</li>
+            <li>แจ้งผู้ประกอบการผ่านระบบ e-GP <b>ภายในวันทำการถัดไป</b></li>
+          </ol>
+        </div>
+      </div>
+      <div class="path" style="border-color:#E6C3BC;background:#FDF7F5">
+        <div class="who" style="background:#FAE7E4;color:var(--s60)">คณะกรรมการสอบข้อเท็จจริง → คณะกรรมการตรวจรับพัสดุ</div>
+        <h4>เส้นทางที่ ๓ — เหตุร้ายแรง</h4>
+        <div class="cases">ใช้กับเงื่อนไข <b>(๓)(ก) – (ง)</b> คือ ตาย · อันตรายสาหัส · ทรัพย์สินเสียหาย</div>
+        <div class="steps">
+          <ol>
+            <li>หน่วยงานของรัฐ<b>แต่งตั้งคณะกรรมการสอบข้อเท็จจริง</b>ขึ้นมาคณะหนึ่งก่อน</li>
+            <li>คณะกรรมการรายงานผลต่อหัวหน้าหน่วยงานของรัฐ<b>โดยเร็วที่สุด</b></li>
+            <li>หากเป็นความผิดของผู้ประกอบการ → คณะกรรมการตรวจรับพัสดุนำผลไป<b>ประเมินคะแนนทุกเหตุ</b> โดยระบุคะแนนสำหรับ<b>เหตุที่มีความเสียหายสูงสุด</b></li>
+            <li>หัวหน้าเจ้าหน้าที่จัดทำแบบแจ้งฯ แจ้งผู้ประกอบการทุกเหตุ → เสนอหัวหน้าหน่วยงาน → แจ้งผ่าน e-GP ภายในวันทำการถัดไป</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 COMMITTEE -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-no">8</div>
+      <div><h2>คณะกรรมการสอบข้อเท็จจริง — องค์ประกอบและการลงมติ</h2><p>ข้อ ๑๙๐/๕ (๓) — ใช้กับการอุทธรณ์โต้แย้งโดยอนุโลมด้วย</p></div>
+    </div>
+    <div class="comm">
+      <div class="cm">
+        <div class="k">องค์ประกอบ</div>
+        <div class="v">ประธาน ๑ + กรรมการอย่างน้อย ๒</div>
+        <p>แต่งตั้งจากข้าราชการ ลูกจ้างประจำ พนักงานราชการ พนักงานมหาวิทยาลัย พนักงานของรัฐ หรือพนักงานของหน่วยงานของรัฐที่เรียกชื่ออย่างอื่น โดยคำนึงถึงลักษณะหน้าที่และความรับผิดชอบเป็นสำคัญ</p>
+      </div>
+      <div class="cm" style="border-color:#C9E0E2;background:#F5FBFB">
+        <div class="k">ต้องมีเพิ่มเติม</div>
+        <div class="v">ผู้ชำนาญการ / ผู้ทรงคุณวุฒิ อย่างน้อย ๑ คน</div>
+        <p>ซึ่ง<b>จะมาจากหน่วยงานของรัฐอื่นหรือภาคเอกชนก็ได้</b> ร่วมเป็นกรรมการด้วย</p>
+      </div>
+      <div class="cm">
+        <div class="k">องค์ประชุม</div>
+        <div class="v">ไม่น้อยกว่ากึ่งหนึ่ง</div>
+        <p>ประธานและกรรมการแต่ละคนมีเสียงหนึ่งในการลงมติ <b>โดยประธานต้องอยู่ด้วยทุกครั้งในการประชุม</b> หากประธานปฏิบัติหน้าที่ไม่ได้ ให้หัวหน้าหน่วยงานแต่งตั้งประธานคนใหม่แทน</p>
+      </div>
+      <div class="cm">
+        <div class="k">มติ</div>
+        <div class="v">เสียงข้างมาก</div>
+        <p>ถ้าคะแนนเสียงเท่ากัน ให้ประธานออกเสียงเพิ่มขึ้นอีกเสียงหนึ่งเป็นเสียงชี้ขาด · กรรมการที่ไม่เห็นด้วยให้ทำ<b>บันทึกความเห็นแย้ง</b>เสนอหัวหน้าหน่วยงาน ซึ่งอาจสั่งให้ตรวจสอบเพิ่มเติมหรือทบทวนมติได้</p>
+      </div>
+    </div>
+    <div class="def" style="margin-top:16px">
+      <div class="term">การมีส่วนได้เสีย</div>
+      <p>ให้นำความ<b>ข้อ ๒๗ วรรคสี่และวรรคห้า</b> ของระเบียบฯ มาใช้บังคับโดยอนุโลม</p>
+    </div>
+  </section>
+
+  <!-- 9 APPEAL -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-no">9</div>
+      <div><h2>ข้อ ๑๙๐/๖ — ไทม์ไลน์การอุทธรณ์โต้แย้งผลการประเมิน</h2><p>ทุกวันเวลานับตามระบบ e-GP เป็นเกณฑ์</p></div>
+    </div>
+    <div class="tl">
+      <svg viewBox="0 0 1060 400" xmlns="http://www.w3.org/2000/svg" font-family="IBM Plex Sans Thai, sans-serif">
+        <defs><marker id="a2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#9AAAB8"/></marker></defs>
+
+        <!-- step 1 -->
+        <rect x="10" y="30" width="230" height="86" rx="12" fill="#16283C"/>
+        <text x="30" y="58" fill="#9FBBD2" font-size="12" font-weight="600">จุดเริ่มต้น</text>
+        <text x="30" y="82" fill="#fff" font-size="15" font-weight="600">ผู้ประกอบการได้รับแจ้ง</text>
+        <text x="30" y="102" fill="#fff" font-size="15" font-weight="600">ผลการประเมินผ่าน e-GP</text>
+
+        <path d="M240 73 H 292" stroke="#9AAAB8" stroke-width="2" marker-end="url(#a2)" fill="none"/>
+
+        <!-- step 2 -->
+        <rect x="298" y="30" width="245" height="86" rx="12" fill="#E9F0F6" stroke="#C6D8E6" stroke-width="1.4"/>
+        <text x="318" y="56" fill="#1E4E75" font-size="12" font-weight="700">ภายใน ๗ วันทำการ</text>
+        <text x="318" y="80" fill="#101E2C" font-size="15" font-weight="600">ยื่นอุทธรณ์โต้แย้ง</text>
+        <text x="318" y="101" fill="#3A4B5C" font-size="12.5">เป็นหนังสือลงลายมือชื่อ + เอกสารหลักฐาน</text>
+
+        <path d="M543 73 H 595" stroke="#9AAAB8" stroke-width="2" marker-end="url(#a2)" fill="none"/>
+
+        <!-- step 3 -->
+        <rect x="601" y="30" width="245" height="86" rx="12" fill="#E9F0F6" stroke="#C6D8E6" stroke-width="1.4"/>
+        <text x="621" y="56" fill="#1E4E75" font-size="12" font-weight="700">ภายใน ๗ วันทำการ</text>
+        <text x="621" y="80" fill="#101E2C" font-size="15" font-weight="600">หน่วยงานพิจารณาให้แล้วเสร็จ</text>
+        <text x="621" y="101" fill="#3A4B5C" font-size="12.5">ผู้ประเมินเดิม หรือแต่งตั้งคณะกรรมการขึ้นมา</text>
+
+        <!-- split -->
+        <path d="M723 116 V 146" stroke="#9AAAB8" stroke-width="2" fill="none"/>
+        <path d="M270 146 H 900" stroke="#9AAAB8" stroke-width="2" fill="none"/>
+        <path d="M270 146 V 176" stroke="#2E7D6B" stroke-width="2" marker-end="url(#a2)" fill="none"/>
+        <path d="M900 146 V 176" stroke="#B3502A" stroke-width="2" marker-end="url(#a2)" fill="none"/>
+
+        <!-- branch A -->
+        <rect x="10" y="182" width="520" height="82" rx="12" fill="#E7F3EF" stroke="#BFDFD4" stroke-width="1.4"/>
+        <text x="32" y="208" fill="#2E7D6B" font-size="12.5" font-weight="700">หน่วยงานเห็นด้วยทั้งหมดหรือบางส่วน และไม่มีผลคะแนนความเสียหาย</text>
+        <text x="32" y="232" fill="#101E2C" font-size="14.5" font-weight="600">จบที่หน่วยงาน</text>
+        <text x="32" y="253" fill="#3A4B5C" font-size="12.5">เสนอหัวหน้าหน่วยงานเห็นชอบ → แจ้งผลผ่าน e-GP ภายในวันทำการถัดไป</text>
+
+        <!-- branch B -->
+        <rect x="548" y="182" width="502" height="82" rx="12" fill="#FBE9E1" stroke="#EFCFC2" stroke-width="1.4"/>
+        <text x="570" y="208" fill="#B3502A" font-size="12.5" font-weight="700">หน่วยงานไม่เห็นด้วย หรือเห็นด้วยบางส่วน และยังมีผลคะแนนความเสียหาย</text>
+        <text x="570" y="232" fill="#101E2C" font-size="14.5" font-weight="600">ต้องส่งต่อผู้มีอำนาจเหนือขึ้นไปหนึ่งชั้น</text>
+        <text x="570" y="253" fill="#3A4B5C" font-size="12.5">เสนอหัวหน้าหน่วยงานเห็นชอบก่อน แล้วรายงานพร้อมเหตุผล</text>
+
+        <path d="M799 264 V 292" stroke="#9AAAB8" stroke-width="2" marker-end="url(#a2)" fill="none"/>
+
+        <rect x="548" y="298" width="160" height="76" rx="11" fill="#fff" stroke="#DCE3EA" stroke-width="1.4"/>
+        <text x="568" y="322" fill="#B3502A" font-size="12" font-weight="700">๗ วันทำการ</text>
+        <text x="568" y="344" fill="#101E2C" font-size="13" font-weight="600">รายงานขึ้นไป</text>
+        <text x="568" y="363" fill="#6B7C8C" font-size="11.5">นับแต่วันที่เห็นชอบ</text>
+
+        <path d="M708 336 H 726" stroke="#9AAAB8" stroke-width="1.6" marker-end="url(#a2)" fill="none"/>
+
+        <rect x="732" y="298" width="160" height="76" rx="11" fill="#fff" stroke="#DCE3EA" stroke-width="1.4"/>
+        <text x="752" y="322" fill="#B3502A" font-size="12" font-weight="700">ภายใน ๓๐ วัน</text>
+        <text x="752" y="344" fill="#101E2C" font-size="13" font-weight="600">พิจารณาให้แล้วเสร็จ</text>
+        <text x="752" y="363" fill="#6B7C8C" font-size="11.5">นับแต่วันที่ได้รับรายงาน</text>
+
+        <path d="M892 336 H 910" stroke="#9AAAB8" stroke-width="1.6" marker-end="url(#a2)" fill="none"/>
+
+        <rect x="916" y="298" width="134" height="76" rx="11" fill="#FBF1DC" stroke="#EBD9B0" stroke-width="1.4"/>
+        <text x="934" y="322" fill="#B0821C" font-size="12" font-weight="700">ขยายได้ ๓๐ วัน</text>
+        <text x="934" y="344" fill="#101E2C" font-size="13" font-weight="600">หากมีเหตุจำเป็น</text>
+        <text x="934" y="363" fill="#6B7C8C" font-size="11.5">ต้องแจ้งก่อนครบกำหนด</text>
+
+        <!-- no appeal -->
+        <rect x="10" y="298" width="520" height="76" rx="11" fill="#F7F9FB" stroke="#DCE3EA" stroke-width="1.4"/>
+        <text x="32" y="322" fill="#6B7C8C" font-size="12" font-weight="700">กรณีไม่อุทธรณ์ภายในกำหนด</text>
+        <text x="32" y="344" fill="#101E2C" font-size="13.5" font-weight="600">หัวหน้าเจ้าหน้าที่จัดทำประกาศและแบบแจ้งผลคะแนนความเสียหาย</text>
+        <text x="32" y="363" fill="#3A4B5C" font-size="12">แจ้งผ่าน e-GP + ประกาศเผยแพร่ในระบบเครือข่ายสารสนเทศของกรมบัญชีกลางและของหน่วยงาน</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 10 RESET -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-no">10</div>
+      <div><h2>คะแนนหายไปได้อย่างไร</h2><p>ข้อ ๑๙๐/๘ และ ๑๙๐/๙</p></div>
+    </div>
+    <div class="reset">
+      <div class="rs a">
+        <div class="k">ข้อ ๑๙๐/๘</div>
+        <h4>ศาลมีคำพิพากษาถึงที่สุด</h4>
+        <p>กรณีผู้ประกอบการฟ้องคดีต่อศาล และศาลมีคำพิพากษาถึงที่สุดว่า<b>ไม่ใช่ความผิดของผู้ประกอบการ</b> → หัวหน้าเจ้าหน้าที่จัดทำประกาศและแบบแจ้ง<b>แก้ไขคะแนนความเสียหาย</b>ภายในวันทำการถัดไปนับแต่วันที่คำพิพากษาถึงที่สุด แล้วแจ้งผ่าน e-GP และประกาศเผยแพร่</p>
+      </div>
+      <div class="rs b">
+        <div class="k">ข้อ ๑๙๐/๙</div>
+        <h4>ครบ ๒ ปี คะแนนถูกลบอัตโนมัติ</h4>
+        <p>เมื่อครบระยะเวลา <b>๒ ปี</b> นับถัดจากวันที่ประกาศเผยแพร่คะแนนความเสียหายในระบบเครือข่ายสารสนเทศของกรมบัญชีกลาง ให้<b>กรมบัญชีกลางลบคะแนนความเสียหาย</b>สำหรับแต่ละเงื่อนไขตามข้อ ๑๙๐/๓ ของผู้ประกอบการรายนั้น <b>ในแต่ละสัญญา</b></p>
+      </div>
+      <div class="rs c">
+        <div class="k">ข้อ ๑๙๑</div>
+        <h4>ประเมินด้านอื่นเพิ่มได้</h4>
+        <p>นอกเหนือจากความสามารถในการปฏิบัติงานให้แล้วเสร็จตามสัญญา <b>อาจกำหนดให้มีการประเมินผลการปฏิบัติงานในด้านอื่น ๆ ด้วยก็ได้</b> ตามวิธีการที่อธิบดีกรมบัญชีกลางกำหนด โดยคำนึงถึงคุณภาพและคุณสมบัติที่เป็นประโยชน์ต่อหน่วยงานของรัฐ</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 TRANSITION -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-no">11</div>
+      <div><h2>บทเฉพาะกาล — สัญญาเก่าโดนด้วยหรือไม่</h2><p>ข้อ ๕ และ ข้อ ๖ ของระเบียบฉบับที่ ๓</p></div>
+    </div>
+    <div class="warn">
+      <div class="hd">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+        <h3>คำตอบคือ “โดนบางกรณี” — และเป็นกรณีที่ร้ายแรงที่สุด</h3>
+      </div>
+      <p>ระเบียบนี้มีผลบังคับใช้ตั้งแต่ ๑๐ กรกฎาคม ๒๕๖๙ แต่มีข้อยกเว้นที่ย้อนไปถึงสัญญาที่ลงนามไว้ก่อนหน้า</p>
+      <div class="row">
+        <div class="side">
+          <div class="t">ข้อ ๕ — กระบวนการจัดซื้อจัดจ้างที่เดินไปแล้ว</div>
+          <h5>ใช้ขั้นตอนเดิมต่อไป</h5>
+          <p>หน่วยงานของรัฐใดได้เผยแพร่ประกาศและเอกสารเชิญชวนในระบบเครือข่ายสารสนเทศของกรมบัญชีกลาง หรือได้มีหนังสือเชิญชวนไปแล้ว <b>ก่อนวันที่ระเบียบนี้มีผลใช้บังคับ</b> ให้ดำเนินการในขั้นตอนเดิมตามระเบียบฯ พ.ศ. ๒๕๖๐ ต่อไป</p>
+        </div>
+        <div class="side">
+          <div class="t">ข้อ ๖ — สัญญาก่อสร้างที่ลงนามไปแล้วและยังมีนิติสัมพันธ์อยู่</div>
+          <h5>ใช้หมวด ๗ ใหม่ เฉพาะกรณีร้ายแรง</h5>
+          <p>กรณีผู้ประกอบการปฏิบัติงานไม่เป็นไปตามมาตรฐานของหลักวิชาช่างในงานก่อสร้าง หรือประมาทเลินเล่ออย่างร้ายแรง อันมีผลกระทบให้</p>
+          <ul>
+            <li>มีบุคคลถึงแก่ความตาย</li>
+            <li>มีบุคคลได้รับอันตรายสาหัส</li>
+            <li>ทรัพย์สินเสียหาย</li>
+            <li>กระทบต่อการจราจร</li>
+            <li>ความเสียหายแก่ประโยชน์สาธารณะ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 CHECKLIST -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-no">12</div>
+      <div><h2>สิ่งที่หน่วยงานต้องเตรียม — เจ้าหน้าที่พัสดุ / ผู้คุมสัญญา</h2><p>แปลงระเบียบเป็นแนวปฏิบัติหน้างาน</p></div>
+    </div>
+    <div class="chk">
+      <div class="row">
+        <div class="box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F6B72" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <div><h5>เพิ่มเงื่อนไขการประเมินลงในประกาศและเอกสารเชิญชวนทุกโครงการตั้งแต่ ๕ ล้านบาทขึ้นไป</h5>
+        <p>ข้อ ๑๙๐/๑ วรรคสอง บังคับว่าหน่วยงานต้องกำหนดไว้ในประกาศและเอกสารเชิญชวน เพื่อให้ผู้ยื่นข้อเสนอทราบเงื่อนไขการประเมินล่วงหน้า — ถ้าไม่ระบุ อาจถูกโต้แย้งภายหลัง</p></div>
+      </div>
+      <div class="row">
+        <div class="box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F6B72" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <div><h5>ตรวจคะแนนความเสียหายสะสมของผู้ยื่นข้อเสนอทุกรายก่อนจัดจ้าง</h5>
+        <p>ข้อ ๑๙๐/๗ กำหนดให้หน่วยงานที่จะจัดจ้างพิจารณาคะแนนสะสมของผู้ยื่นข้อเสนอแต่ละราย หากอยู่ในเกณฑ์ถูกระงับ จะยื่นข้อเสนอหรือทำสัญญาไม่ได้</p></div>
+      </div>
+      <div class="row">
+        <div class="box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F6B72" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <div><h5>วางระบบให้ผู้ควบคุมงานรายงานเป็นเอกสารทุกครั้ง</h5>
+        <p>เงื่อนไข (๑) และ (๓)(จ) ให้คณะกรรมการตรวจรับพัสดุประเมิน <b>โดยพิจารณาจากรายงานของผู้ควบคุมงาน</b> — ถ้ารายงานไม่ครบ คณะกรรมการจะประเมินไม่ได้</p></div>
+      </div>
+      <div class="row">
+        <div class="box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F6B72" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <div><h5>เตรียมรายชื่อผู้ชำนาญการ / ผู้ทรงคุณวุฒิไว้ล่วงหน้า</h5>
+        <p>เหตุร้ายแรงตาม (๓)(ก)–(ง) ต้องตั้งคณะกรรมการสอบข้อเท็จจริง ซึ่ง<b>ต้องมีผู้ชำนาญการหรือผู้ทรงคุณวุฒิอย่างน้อย ๑ คน</b> และจะมาจากหน่วยงานรัฐอื่นหรือภาคเอกชนก็ได้ — เตรียมไว้ก่อนจะเร็วกว่ามาหาตอนเกิดเหตุ</p></div>
+      </div>
+      <div class="row">
+        <div class="box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F6B72" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <div><h5>ตั้งนาฬิกาเตือน ๓๐ วัน สำหรับหนังสือแจ้งคะแนนซ้ำ</h5>
+        <p>ทั้งเงื่อนไข (๓)(จ) และ (๔) กำหนดให้หน่วยงาน<b>มีหนังสือแจ้งคะแนนความเสียหายทุก ๓๐ วัน</b> ตราบที่ผู้ประกอบการยังไม่แก้ไข — เป็นภาระที่ต้องติดตามต่อเนื่อง ไม่ใช่แจ้งครั้งเดียวจบ</p></div>
+      </div>
+      <div class="row">
+        <div class="box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F6B72" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <div><h5>อย่าลืมช่วงรับประกันความชำรุดบกพร่อง — ที่นั่นมีโทษ ๖๐ คะแนน</h5>
+        <p>ถ้าหน่วยงานต้องเข้าไปซ่อมเองหรือจ้างผู้อื่นมาซ่อม ผู้รับจ้างโดน ๖๐ คะแนน เท่ากับถูกบอกเลิกสัญญา — ควรมีระบบติดตามงานที่หมดสัญญาแล้วแต่ยังอยู่ในระยะรับประกัน</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <b style="color:var(--ink)">แหล่งอ้างอิง</b> — ราชกิจจานุเบกษา เล่ม ๑๔๓ ตอนพิเศษ ๑๖๙ ง หน้า ๑–๙ วันที่ ๙ กรกฎาคม ๒๕๖๙<br>
+      ระเบียบกระทรวงการคลังว่าด้วยการจัดซื้อจัดจ้างและการบริหารพัสดุภาครัฐ (ฉบับที่ ๓) พ.ศ. ๒๕๖๙ ลงวันที่ ๘ กรกฎาคม ๒๕๖๙ พร้อมบัญชีเอกสารแนบท้าย
+    </div>
+    <div style="text-align:right">
+      เอกสารสรุปเพื่อการนำเสนอภายในหน่วยงาน<br>
+      <span style="opacity:.7">กรณีมีข้อขัดแย้ง ให้ยึดตามระเบียบฉบับราชกิจจานุเบกษาเป็นสำคัญ</span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
