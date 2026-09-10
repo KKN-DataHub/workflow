@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "ProjectFlow — แขวงทางหลวงชนบทขอนแก่น",
+  "short_name": "ProjectFlow",
+  "lang": "th",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#154ac4",
+  "theme_color": "#154ac4",
+  "icons": [
+    {
+      "src": "assets/projectflow-home-icon.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
